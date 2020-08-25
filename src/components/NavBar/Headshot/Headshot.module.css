@@ -1,0 +1,44 @@
+.heads {
+  position: absolute;
+  height: 55px;
+}
+
+.name {
+  position: relative;
+  font-size: 1rem;
+  top: 55px;
+}
+
+.stamp {
+  position: relative;
+  top: -10px;
+  left: 0;
+  transform: rotate(12deg);
+  color: #00ff37;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 0.5rem solid #00ff37;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-family: 'Courier';
+  mix-blend-mode: multiply;
+  transform: rotate(-14deg);
+  mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+}
+
+@media (max-width: 450px) {
+  .heads {
+    height: 40px;
+  }
+
+  .name {
+    font-size: 0.75rem;
+    top: 40px;
+  }
+
+  .stamp {
+    font-size: 1.2rem;
+  }
+}

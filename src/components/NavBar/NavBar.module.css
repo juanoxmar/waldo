@@ -1,0 +1,23 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1976d2;
+  position: static;
+  box-sizing: border-box;
+  height: 75px;
+}
+
+.navBar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  .navBar {
+    height: 56px;
+  }
+}
