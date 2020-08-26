@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/waldo/static/css/main.1e9975be.chunk.css",
-    "main.js": "/waldo/static/js/main.8a836af4.chunk.js",
-    "main.js.map": "/waldo/static/js/main.8a836af4.chunk.js.map",
+    "main.js": "/waldo/static/js/main.208d8ac8.chunk.js",
+    "main.js.map": "/waldo/static/js/main.208d8ac8.chunk.js.map",
     "runtime-main.js": "/waldo/static/js/runtime-main.fbce9503.js",
     "runtime-main.js.map": "/waldo/static/js/runtime-main.fbce9503.js.map",
-    "static/js/2.dccbda52.chunk.js": "/waldo/static/js/2.dccbda52.chunk.js",
-    "static/js/2.dccbda52.chunk.js.map": "/waldo/static/js/2.dccbda52.chunk.js.map",
+    "static/js/2.83d89c32.chunk.js": "/waldo/static/js/2.83d89c32.chunk.js",
+    "static/js/2.83d89c32.chunk.js.map": "/waldo/static/js/2.83d89c32.chunk.js.map",
     "index.html": "/waldo/index.html",
-    "precache-manifest.0114f4c005775d2065abb2dd51a6913d.js": "/waldo/precache-manifest.0114f4c005775d2065abb2dd51a6913d.js",
+    "precache-manifest.df15fcdbfe6f3d753c5c4f2169895a8d.js": "/waldo/precache-manifest.df15fcdbfe6f3d753c5c4f2169895a8d.js",
     "service-worker.js": "/waldo/service-worker.js",
     "static/css/main.1e9975be.chunk.css.map": "/waldo/static/css/main.1e9975be.chunk.css.map",
-    "static/js/2.dccbda52.chunk.js.LICENSE.txt": "/waldo/static/js/2.dccbda52.chunk.js.LICENSE.txt",
+    "static/js/2.83d89c32.chunk.js.LICENSE.txt": "/waldo/static/js/2.83d89c32.chunk.js.LICENSE.txt",
     "static/media/odlaw.png": "/waldo/static/media/odlaw.b975679b.png",
     "static/media/waldo.jpg": "/waldo/static/media/waldo.2376a697.jpg",
     "static/media/wally.png": "/waldo/static/media/wally.e00ea340.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fbce9503.js",
-    "static/js/2.dccbda52.chunk.js",
+    "static/js/2.83d89c32.chunk.js",
     "static/css/main.1e9975be.chunk.css",
-    "static/js/main.8a836af4.chunk.js"
+    "static/js/main.208d8ac8.chunk.js"
   ]
 }
