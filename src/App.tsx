@@ -58,7 +58,7 @@ export default function App() {
   if (timerStop && submitScore) {
     scores = (
       <>
-        <Modal title='BEST TIMES'>TEST SOMETHING HERE</Modal>
+        <Modal title='BEST TIMES' />
       </>
     );
   }

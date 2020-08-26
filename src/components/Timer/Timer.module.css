@@ -1,5 +1,7 @@
 .timer {
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .timerOn {

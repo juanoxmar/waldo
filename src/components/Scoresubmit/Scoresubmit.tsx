@@ -22,7 +22,7 @@ function Landpage(props: Props) {
     try {
       await axios.post('/times.json', {
         name: data.name,
-        time: time.toFixed(2),
+        time: +time.toFixed(2),
       });
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ function Landpage(props: Props) {
           size='small'
           style={{ margin: 8 }}
         />
-        <Button variant='outlined' type='submit'>
+        <Button variant='outlined' type='submit' size='small'>
           SUBMIT
         </Button>
       </form>
