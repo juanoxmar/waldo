@@ -9,11 +9,19 @@ type Props = {
 
 function Headshot(props: Props) {
   const { image, name, found } = props;
+
+  let foundText = null;
+  let headClass = classes.heads;
+  if (found) {
+    foundText = <span className={classes.stamp}>FOUND</span>;
+    headClass = `${classes.heads} ${classes.absolute}`;
+  }
+
   return (
-    <div>
-      <img src={image} alt={name} className={classes.heads} />
-      <span className={classes.name}>{name}</span>
-      <span className={found ? classes.stamp : ''}>FOUND</span>
+    <div className={classes.width}>
+      <img src={image} alt={name} className={headClass} />
+      <span className={found ? classes.name : ''}>{name}</span>
+      {foundText}
     </div>
   );
 }

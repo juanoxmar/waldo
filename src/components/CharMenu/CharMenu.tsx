@@ -5,17 +5,17 @@ import axios from '../../axios';
 
 type Props = {
   character: string;
+  who: () => void;
 };
 
 function CharMenu(props: Props) {
-  const { character } = props;
+  const { character, who } = props;
 
   const [anchorEl, setAnchorEl] = useState<HTMLElement>(null!);
   const [found, setFound] = useState(false);
   const [charBoxCheck, setCharBoxCheck] = useState(false);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    // Set a dynamic class to display border of selection
     setAnchorEl(event.currentTarget);
     setCharBoxCheck(true);
   };
@@ -26,8 +26,7 @@ function CharMenu(props: Props) {
       const data = await response.data;
       if (data[+boxNumber] === character) {
         setFound(true);
-      } else {
-        setCharBoxCheck(false);
+        who();
       }
     } catch (error) {
       console.error(error);
@@ -36,11 +35,15 @@ function CharMenu(props: Props) {
   };
 
   const handleClose = () => {
+    setCharBoxCheck(false);
     setAnchorEl(null!);
   };
 
   let charBox = null;
-  if (charBoxCheck) {
+
+  if (found) {
+    charBox = classes.boxTrue;
+  } else if (charBoxCheck) {
     charBox = classes.boxTrue;
   }
 

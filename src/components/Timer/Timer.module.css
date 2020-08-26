@@ -1,0 +1,11 @@
+.timer {
+  text-align: center;
+}
+
+.timerOn {
+  color: red;
+}
+
+.timerStop {
+  color: green;
+}

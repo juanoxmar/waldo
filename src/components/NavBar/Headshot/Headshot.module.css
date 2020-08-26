@@ -1,6 +1,15 @@
 .heads {
-  position: absolute;
   height: 55px;
+}
+
+.width {
+  width: 150px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .name {
@@ -15,7 +24,7 @@
   left: 0;
   transform: rotate(12deg);
   color: #00ff37;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   border: 0.5rem solid #00ff37;
   display: inline-block;
