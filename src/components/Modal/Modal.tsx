@@ -62,7 +62,9 @@ export default function SimpleModal(props: Props) {
 
   return (
     <>
-      <Button onClick={handleOpen}>{title}</Button>
+      <Button onClick={handleOpen} variant='outlined'>
+        {title}
+      </Button>
       <Dialog open={open} onClose={handleClose} maxWidth='lg'>
         <DialogTitle style={{ textAlign: 'center' }}>{title}</DialogTitle>
         <ol className={classes.list}>{timeTable}</ol>
