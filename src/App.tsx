@@ -67,11 +67,11 @@ export default function App() {
   if (start) {
     Page = (
       <>
-        <Waldo found={foundHandler} />
         <div className={classes.center}>
           <Timer stop={timerStop} time={getTime} />
           {scores}
         </div>
+        <Waldo found={foundHandler} />
       </>
     );
   }

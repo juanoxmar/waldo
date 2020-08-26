@@ -1,28 +1,20 @@
 .container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-}
-
-.waldo {
   position: relative;
-  background-color: rgb(248, 248, 248);
-  padding: 10px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(214, 214, 214, 1);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(214, 214, 214, 1);
-  box-shadow: 10px 10px 5px 0px rgba(214, 214, 214, 1);
-  height: 100%;
 }
 
 .pic {
+  margin-top: 8px;
+  overflow: auto;
   position: relative;
   z-index: 1;
 }
 
 .waldoGrid {
   position: absolute;
-  top: 45.9%;
-  left: 51.5%;
+  top: 360px;
+  left: 530px;
   z-index: 2;
   width: 25px;
   height: 50px;
@@ -30,8 +22,8 @@
 
 .odlawGrid {
   position: absolute;
-  top: 46.7%;
-  left: 23.5%;
+  top: 360px;
+  left: 238px;
   z-index: 2;
   width: 25px;
   height: 50px;
@@ -39,19 +31,9 @@
 
 .wizardGrid {
   position: absolute;
-  top: 46%;
-  left: 61%;
+  top: 356px;
+  left: 628px;
   z-index: 2;
   width: 25px;
   height: 50px;
-}
-
-.kidGrid {
-  position: absolute;
-  top: 77.9%;
-  left: 63.5%;
-  z-index: 2;
-  width: 28px;
-  height: 32px;
-  box-sizing: border-box;
 }

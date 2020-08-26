@@ -36,18 +36,3 @@
   transform: rotate(-14deg);
   mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
 }
-
-@media (max-width: 450px) {
-  .heads {
-    height: 40px;
-  }
-
-  .name {
-    font-size: 0.75rem;
-    top: 40px;
-  }
-
-  .stamp {
-    font-size: 1.2rem;
-  }
-}

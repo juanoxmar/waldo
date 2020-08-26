@@ -16,10 +16,8 @@ export default function Waldo(props: Props) {
 
   return (
     <div className={classes.container}>
-      <div className={classes.waldo}>
-        <div className={classes.pic}>
-          <img src={waldoPhoto} alt='' />
-        </div>
+      <div className={classes.pic}>
+        <img src={waldoPhoto} alt='' draggable='false' />
         <div className={classes.waldoGrid}>
           <CharMenu character='waldo' who={() => who('waldo')} />
         </div>
