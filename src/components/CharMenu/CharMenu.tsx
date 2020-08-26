@@ -48,7 +48,7 @@ function CharMenu(props: Props) {
   }
 
   return (
-    <React.Fragment>
+    <>
       <button
         disabled={found}
         tabIndex={-1}
@@ -68,7 +68,7 @@ function CharMenu(props: Props) {
         <MenuItem onClick={() => checkHandler('1')}>Odlaw</MenuItem>
         <MenuItem onClick={() => checkHandler('2')}>Wizard Whitehead</MenuItem>
       </Menu>
-    </React.Fragment>
+    </>
   );
 }
 
