@@ -66,7 +66,7 @@ function CharMenu(props: Props) {
       >
         <MenuItem onClick={() => checkHandler('0')}>Waldo</MenuItem>
         <MenuItem onClick={() => checkHandler('1')}>Odlaw</MenuItem>
-        <MenuItem onClick={() => checkHandler('2')}>Wizard Whitehead</MenuItem>
+        <MenuItem onClick={() => checkHandler('2')}>Wizard</MenuItem>
       </Menu>
     </>
   );

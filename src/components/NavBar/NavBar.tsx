@@ -18,7 +18,7 @@ function NavBar(props: Props) {
     <header className={classes.navBar}>
       <Headshot image={waldo} name='Waldo' found={waldoFound} />
       <Headshot image={odlaw} name='Odlaw' found={odlawFound} />
-      <Headshot image={wizard} name='Wizard Whitehead' found={wizardFound} />
+      <Headshot image={wizard} name='Wizard' found={wizardFound} />
     </header>
   );
 }
