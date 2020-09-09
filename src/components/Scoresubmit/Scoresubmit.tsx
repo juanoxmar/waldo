@@ -3,6 +3,12 @@ import { Button, TextField } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
 import classes from './Scoresubmit.module.css';
 import axios from '../../axios';
+import { yupResolver } from '@hookform/resolvers';
+import * as yup from 'yup';
+
+const schema = yup.object({
+  name: yup.string().required('Name Required'),
+});
 
 type Props = {
   time: number;
@@ -16,7 +22,10 @@ interface IFormInputs {
 function Landpage(props: Props) {
   const { time, score } = props;
 
-  const { register, handleSubmit } = useForm<IFormInputs>();
+  const { register, handleSubmit, formState, errors } = useForm<IFormInputs>({
+    resolver: yupResolver(schema),
+    mode: 'all',
+  });
 
   const onSubmit = async (data: IFormInputs) => {
     try {
@@ -40,9 +49,15 @@ function Landpage(props: Props) {
           type='text'
           variant='outlined'
           size='small'
+          error={!!errors.name}
           style={{ margin: 8 }}
         />
-        <Button variant='outlined' type='submit' size='small'>
+        <Button
+          variant='outlined'
+          type='submit'
+          size='small'
+          disabled={!formState.isValid}
+        >
           SUBMIT
         </Button>
       </form>
